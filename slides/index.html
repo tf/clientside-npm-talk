@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clientside Dependency Management with npm and ender</title>
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/slides.css" />
+    <link href='http://fonts.googleapis.com/css?family=Chivo:400,900' rel='stylesheet' type='text/css'>
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/slides.js"></script>
+  </head>
+  <body>
+    <section>
+      <h1 class="centered"><span>Clientside</span> Dependency Management <span>with</span> npm <span>and</span> ender</h1>
+    </section>
+
+    <section>
+      <p class="centered humble">
+        github.com/tf<br />
+        @tfischbach
+      </p>
+    </section>
+
+    <section>
+      <pre class="centered">
+        scripts/...
+        assets/js/...
+        src/libs/...
+      </pre>
+    </section>
+
+    <section>
+      <p class="centered">npm</p>
+    </section>
+
+    <section class="red">
+      <p class="centered">why</p>
+    </section>
+
+    <section>
+      <p class="centered">modularity</p>
+    </section>
+
+    <section>
+      <p class="centered">versioning</p>
+    </section>
+
+    <section>
+      <pre class="centered">
+        {
+          name: "my-application",
+          dependencies: {
+            "underscore": ">= 1.0"
+          }
+        }
+      </pre>
+    </section>
+
+    <section>
+      <p class="centered">npm goodies</p>
+    </section>
+
+    <section>
+      <code class="centered">$ npm link my-library</code>
+    </section>
+
+    <section>
+      <code class="centered">$ npm config set registry \<br />&nbsp;&nbsp;http://npm-registry.mydomain.de</code>
+    </section>
+
+    <section class="red">
+      <p class="centered">require.js?</p>
+    </section>
+
+    <section class="red">
+      <p class="centered">bpm</p>
+    </section>
+  </body>
+</html>

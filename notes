@@ -1,0 +1,15 @@
+- npm fundamentals
+  - package.json
+- why
+  - modularity
+  - versioning
+  - dependencies
+- ender
+  - concatenation
+  - require
+- npm goodies
+  - link
+  - private repository
+- alternatives
+  - require.js
+  - bpm
