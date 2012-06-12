@@ -1,8 +1,10 @@
 # Talk: Client-side Dependency Management with npm and ender
 
-by [Tim Fischbach](http://github.com/tf/clientside-npm) ([@tfischbach](http://twitter.com/tfischbach))
+by [Tim Fischbach](http://github.com/tf) ([@tfischbach](http://twitter.com/tfischbach))
 
 ## Links & Resources
+
+* [Slides](http://tf.github.com/clientside-npm-talk/slides)
 
 ### npm
 
