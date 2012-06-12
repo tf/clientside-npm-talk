@@ -1,6 +1,8 @@
 {
   "name": "clientside-npm-slides",
   "description": "Slides for a talk about modularizing and versioning client-side javascript.",
+  "author": "Tim Fischbach",
+  "email": "tfischbach@codevise.de",
   "version": "0.1.0",
   "dependencies": {
     "html-slides": "*"

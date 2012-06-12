@@ -1,76 +1,136 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Clientside Dependency Management with npm and ender</title>
+    <title>Client-side Dependency Management with npm and ender</title>
 
     <link rel="stylesheet" href="build/main.css" />
     <script src="build/ender.js"></script>
   </head>
   <body>
     <section>
-      <h1 class="centered"><span>Clientside</span> Dependency Management <span>with</span> npm <span>and</span> ender</h1>
+      <h1 class="centered"><span>Client-side</span> Dependency Management <span>with</span> npm <span>and</span> ender</h1>
     </section>
 
     <section>
       <p class="centered humble">
         github.com/tf<br />
-        @tfischbach
+        @tfischbach<br />
+        tfischbach@codevise.de
       </p>
     </section>
 
-    <section>
+    <section class="alert">
+      <p class="centered">why?</p>
+    </section>
+
+    <section class="alert">
       <pre class="centered">
+        scripts/jquery-1.7.2.js
+        scripts/jquery.hashchange-1.3.js
+        scripts/underscore-1.3.3.js
+        scripts/my-awesome-library-4.1.9.js
         scripts/...
+
         assets/js/...
+
         src/libs/...
       </pre>
     </section>
 
     <section>
-      <p class="centered">npm</p>
+      <p>npm</p>
     </section>
 
-    <section class="red">
-      <p class="centered">why</p>
-    </section>
-
-    <section>
-      <p class="centered">modularity</p>
-    </section>
-
-    <section>
-      <p class="centered">versioning</p>
-    </section>
-
-    <section>
-      <pre class="centered">
+    <section class="code">
+      <pre>
+        # package.json
         {
-          name: "my-application",
-          dependencies: {
+          "name": "my-application",
+          "author": "Tim Fischbach",
+          "version": "0.1.0",
+          "dependencies": {
             "underscore": ">= 1.0"
+          },
+          "devDependencies": {
+            "buster": "*"
           }
-        }
-      </pre>
+        }</pre>
+    </section>
+
+    <section class="code">
+      <code>
+        $ ls<br />
+        <output>package.json</output><br />
+        <br />
+        $ npm install .<br />
+        <output>=> node_modules/...</output>
+      </code>
     </section>
 
     <section>
-      <p class="centered">npm goodies</p>
+      <p>ender</p>
+    </section>
+
+    <section class="code">
+      <code>
+        $ ls<br />
+        <output>package.json</output><br />
+        <br />
+        $ ender build .<br />
+        <output>=> ender.js ender.min.js</output>
+      </code>
+    </section>
+
+    <section class="code">
+      <code>
+        <b># main.js</b><br />
+        var underscore = require('underscore');
+      </code>
+    </section>
+
+    <section class="alert">
+      <p>build step :(</p>
     </section>
 
     <section>
-      <code class="centered">$ npm link my-library</code>
+      <p>npm goodies</p>
+    </section>
+
+    <section class="code">
+      <code>
+        $ cd my-library<br />
+        $ npm link<br />
+        <br />
+        $ cd ../my-app<br />
+        $ npm link my-library<br />
+        <output>=> node_modules/my_library -> ../my-library</output>
+      </code>
+    </section>
+
+    <section class="code">
+      <code>
+        $ npm config set registry \<br />
+        &nbsp;&nbsp;http://npm-registry.mydomain.de
+      </code>
+    </section>
+
+    <section class="alert">
+      <p>require.js?</p>
+    </section>
+
+    <section class="alert">
+      <p>bpm?</p>
     </section>
 
     <section>
-      <code class="centered">$ npm config set registry \<br />&nbsp;&nbsp;http://npm-registry.mydomain.de</code>
-    </section>
+      <p>
+        thanks
 
-    <section class="red">
-      <p class="centered">require.js?</p>
-    </section>
-
-    <section class="red">
-      <p class="centered">bpm</p>
+        <span class="links">
+          @tfischbach<br />
+          links & slides &nbsp;&ndash;&nbsp; github.com/tf/clientside-npm-talk
+        </span>
+      </p>
     </section>
   </body>
 </html>

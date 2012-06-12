@@ -538,15 +538,6 @@ h1 span {
   font-size: 0.5em;
   opacity: 0.8;
 }
-h2.fullpage {
-  font-size: 6em;
-  text-align: center;
-}
-h3.example {
-  font-size: 4em;
-  text-align: center;
-  text-decoration: underline;
-}
 p {
   font-size: 10em;
   font-weight: 900;
@@ -563,18 +554,32 @@ code {
   padding: 0 2em;
   text-shadow: #111 0.02em 0.02em 0.1em;
 }
+code output,
+code b {
+  color: #bbb;
+  font-weight: normal;
+}
 .humble {
   font-size: 5em;
 }
-.centered {
+.links {
+  font-size: 0.2em;
+  line-height: 2em;
+  margin-top: 2em;
+  display: block;
+}
+section:not(.custom) > * {
   position: relative;
   top: 50%;
   left: 0;
   margin: 0;
   -webkit-transform: translateY(-50%);
 }
-.red {
+.alert {
   background-color: #d93d3d;
+}
+.code {
+  background-color: #000;
 }
 @font-face {
   font-family: 'Chivo';
